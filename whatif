@@ -1,0 +1,2908 @@
+{
+  "changes": [
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.alertsmanagement/smartDetectorAlertRules/Failure Anomalies - fa-pmtsvc-ledger",
+        "location": "global",
+        "name": "Failure Anomalies - fa-pmtsvc-ledger",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "Dev"
+        },
+        "type": "microsoft.alertsmanagement/smartDetectorAlertRules"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.alertsmanagement/smartDetectorAlertRules/Failure Anomalies - fa-pmtsvc-ledger",
+        "location": "global",
+        "name": "Failure Anomalies - fa-pmtsvc-ledger",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "Dev"
+        },
+        "type": "microsoft.alertsmanagement/smartDetectorAlertRules"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.alertsmanagement/smartDetectorAlertRules/Failure Anomalies - fa-pmtsvc-ledger",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus",
+        "location": "centralus",
+        "name": "appcs-pmtsvc-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "free"
+        },
+        "tags": {
+          "Developer": "Mkhan",
+          "Environment": "Dev",
+          "Purpose": "Create RTP Payment endpoints"
+        },
+        "type": "Microsoft.AppConfiguration/configurationStores"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus",
+        "location": "centralus",
+        "name": "appcs-pmtsvc-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "free"
+        },
+        "tags": {
+          "Developer": "Mkhan",
+          "Environment": "Dev",
+          "Purpose": "Create RTP Payment endpoints"
+        },
+        "type": "Microsoft.AppConfiguration/configurationStores"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2023-03-01",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:COSMOS_API_CONFIG_CONTAINER",
+        "name": "rtpSend:AppSettings:COSMOS_API_CONFIG_CONTAINER",
+        "properties": {
+          "value": "apiUserConfig"
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.AppConfiguration/configurationStores/keyValues"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:COSMOS_API_CONFIG_CONTAINER",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2023-03-01",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:COSMOS_DATABASE",
+        "name": "rtpSend:AppSettings:COSMOS_DATABASE",
+        "properties": {
+          "value": "payments"
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.AppConfiguration/configurationStores/keyValues"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:COSMOS_DATABASE",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2023-03-01",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:COSMOS_IDEMPOTENCY_CONTAINER",
+        "name": "rtpSend:AppSettings:COSMOS_IDEMPOTENCY_CONTAINER",
+        "properties": {
+          "value": "paymentIdempotency"
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.AppConfiguration/configurationStores/keyValues"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:COSMOS_IDEMPOTENCY_CONTAINER",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2023-03-01",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:COSMOS_PARTNER_LEDGER_CONTAINER",
+        "name": "rtpSend:AppSettings:COSMOS_PARTNER_LEDGER_CONTAINER",
+        "properties": {
+          "value": "partnerLedger"
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.AppConfiguration/configurationStores/keyValues"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:COSMOS_PARTNER_LEDGER_CONTAINER",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2023-03-01",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:COSMOS_PAYMENT_CONTAINER",
+        "name": "rtpSend:AppSettings:COSMOS_PAYMENT_CONTAINER",
+        "properties": {
+          "value": "paymentRequests"
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.AppConfiguration/configurationStores/keyValues"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:COSMOS_PAYMENT_CONTAINER",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2023-03-01",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:PARTNER_LEDGER_SPNAME",
+        "name": "rtpSend:AppSettings:PARTNER_LEDGER_SPNAME",
+        "properties": {
+          "value": "[test].[vAccountFboLookup]"
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.AppConfiguration/configurationStores/keyValues"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:PARTNER_LEDGER_SPNAME",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2023-03-01",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:RETRY_TIMER_SCHEDULE",
+        "name": "rtpSend:AppSettings:RETRY_TIMER_SCHEDULE",
+        "properties": {
+          "value": "0 */5 * * * *"
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.AppConfiguration/configurationStores/keyValues"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:RETRY_TIMER_SCHEDULE",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2023-03-01",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:RTP_SEND_TRAN_CODE",
+        "name": "rtpSend:AppSettings:RTP_SEND_TRAN_CODE",
+        "properties": {
+          "value": "21"
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.AppConfiguration/configurationStores/keyValues"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:RTP_SEND_TRAN_CODE",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2023-03-01",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:SERVICE_BUS_PROCESS_SUBSCRIPTION_NAME",
+        "name": "rtpSend:AppSettings:SERVICE_BUS_PROCESS_SUBSCRIPTION_NAME",
+        "properties": {
+          "value": "rtpsend-process"
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.AppConfiguration/configurationStores/keyValues"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:SERVICE_BUS_PROCESS_SUBSCRIPTION_NAME",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2023-03-01",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:SERVICE_BUS_TOPIC_NAME",
+        "name": "rtpSend:AppSettings:SERVICE_BUS_TOPIC_NAME",
+        "properties": {
+          "value": "payment-processing"
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.AppConfiguration/configurationStores/keyValues"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:SERVICE_BUS_TOPIC_NAME",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2023-03-01",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:TABAPAY_SEND_URL",
+        "name": "rtpSend:AppSettings:TABAPAY_SEND_URL",
+        "properties": {
+          "value": "https://apitest.getevolved.com/v1/Transactions/Card"
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.AppConfiguration/configurationStores/keyValues"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/rtpSend:AppSettings:TABAPAY_SEND_URL",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2023-03-01",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/telemetry:APP_INSIGHTS-CUSTOM_PROP_EVOLVE_TEAM",
+        "name": "telemetry:APP_INSIGHTS-CUSTOM_PROP_EVOLVE_TEAM",
+        "properties": {
+          "value": "Services"
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.AppConfiguration/configurationStores/keyValues"
+      },
+      "before": {
+        "apiVersion": "2023-03-01",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/telemetry:APP_INSIGHTS-CUSTOM_PROP_EVOLVE_TEAM",
+        "name": "telemetry:APP_INSIGHTS-CUSTOM_PROP_EVOLVE_TEAM",
+        "properties": {
+          "value": "Services"
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.AppConfiguration/configurationStores/keyValues"
+      },
+      "changeType": "NoChange",
+      "delta": [],
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/telemetry:APP_INSIGHTS-CUSTOM_PROP_EVOLVE_TEAM",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2023-03-01",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/telemetry:APP_INSIGHTS-CUSTOM_PROP_EVOLVE_TRAIN",
+        "name": "telemetry:APP_INSIGHTS-CUSTOM_PROP_EVOLVE_TRAIN",
+        "properties": {
+          "value": "Digital"
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.AppConfiguration/configurationStores/keyValues"
+      },
+      "before": {
+        "apiVersion": "2023-03-01",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/telemetry:APP_INSIGHTS-CUSTOM_PROP_EVOLVE_TRAIN",
+        "name": "telemetry:APP_INSIGHTS-CUSTOM_PROP_EVOLVE_TRAIN",
+        "properties": {
+          "value": "Digital"
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.AppConfiguration/configurationStores/keyValues"
+      },
+      "changeType": "NoChange",
+      "delta": [],
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.AppConfiguration/configurationStores/appcs-pmtsvc-dev-centralus/keyValues/telemetry:APP_INSIGHTS-CUSTOM_PROP_EVOLVE_TRAIN",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Cache/Redis/redis-pmtsvc-dev-centralus",
+        "location": "centralus",
+        "name": "redis-pmtsvc-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Cache/Redis"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Cache/Redis/redis-pmtsvc-dev-centralus",
+        "location": "centralus",
+        "name": "redis-pmtsvc-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Cache/Redis"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Cache/Redis/redis-pmtsvc-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.ContainerRegistry/registries/acrpmtsvcdevcentralus",
+        "location": "centralus",
+        "name": "acrpmtsvcdevcentralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Premium",
+          "tier": "Premium"
+        },
+        "tags": {
+          "Developer": "AHopper",
+          "Environment": "Dev",
+          "Project": "Ecco Ledger"
+        },
+        "type": "Microsoft.ContainerRegistry/registries"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.ContainerRegistry/registries/acrpmtsvcdevcentralus",
+        "location": "centralus",
+        "name": "acrpmtsvcdevcentralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Premium",
+          "tier": "Premium"
+        },
+        "tags": {
+          "Developer": "AHopper",
+          "Environment": "Dev",
+          "Project": "Ecco Ledger"
+        },
+        "type": "Microsoft.ContainerRegistry/registries"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.ContainerRegistry/registries/acrpmtsvcdevcentralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.DocumentDb/databaseAccounts/cosmos-paymentservices-dev-centralus",
+        "identity": {
+          "type": "None"
+        },
+        "kind": "GlobalDocumentDB",
+        "location": "centralus",
+        "name": "cosmos-paymentservices-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "MKhan",
+          "Environment": "Dev",
+          "Purpose": "RTP Endpoints",
+          "defaultExperience": "Core (SQL)"
+        },
+        "type": "Microsoft.DocumentDb/databaseAccounts"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.DocumentDb/databaseAccounts/cosmos-paymentservices-dev-centralus",
+        "identity": {
+          "type": "None"
+        },
+        "kind": "GlobalDocumentDB",
+        "location": "centralus",
+        "name": "cosmos-paymentservices-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "MKhan",
+          "Environment": "Dev",
+          "Purpose": "RTP Endpoints",
+          "defaultExperience": "Core (SQL)"
+        },
+        "type": "Microsoft.DocumentDb/databaseAccounts"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.DocumentDb/databaseAccounts/cosmos-paymentservices-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-05-15",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-paymentservices-dev-centralus/sqlDatabases/payments",
+        "name": "payments",
+        "properties": {
+          "options": {
+            "autoscaleSettings": {
+              "maxThroughput": 4000
+            }
+          },
+          "resource": {
+            "id": "payments"
+          }
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases"
+      },
+      "before": {
+        "apiVersion": "2024-05-15",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-paymentservices-dev-centralus/sqlDatabases/payments",
+        "name": "payments",
+        "properties": {
+          "resource": {
+            "id": "payments"
+          }
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases"
+      },
+      "changeType": "Modify",
+      "delta": [
+        {
+          "after": {
+            "autoscaleSettings": {
+              "maxThroughput": 4000
+            }
+          },
+          "before": null,
+          "children": null,
+          "path": "properties.options",
+          "propertyChangeType": "Create"
+        }
+      ],
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-paymentservices-dev-centralus/sqlDatabases/payments",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-05-15",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-paymentservices-dev-centralus/sqlDatabases/payments/containers/apiUserConfig",
+        "name": "apiUserConfig",
+        "properties": {
+          "resource": {
+            "conflictResolutionPolicy": {
+              "mode": "LastWriterWins"
+            },
+            "geospatialConfig": {
+              "type": "Geography"
+            },
+            "id": "apiUserConfig",
+            "indexingPolicy": {
+              "automatic": true,
+              "excludedPaths": [
+                {
+                  "path": "/\"_etag\"/?"
+                }
+              ],
+              "includedPaths": [
+                {
+                  "path": "/*"
+                }
+              ],
+              "indexingMode": "consistent"
+            },
+            "partitionKey": {
+              "kind": "Hash",
+              "paths": [
+                "/clientId"
+              ]
+            }
+          }
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers"
+      },
+      "before": {
+        "apiVersion": "2024-05-15",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-paymentservices-dev-centralus/sqlDatabases/payments/containers/apiUserConfig",
+        "name": "apiUserConfig",
+        "properties": {
+          "resource": {
+            "conflictResolutionPolicy": {
+              "conflictResolutionPath": "/_ts",
+              "mode": "LastWriterWins"
+            },
+            "fullTextPolicy": {
+              "defaultLanguage": "en-US",
+              "defaultSpec": {
+                "language": "en-US",
+                "stopWordListKind": "extended"
+              }
+            },
+            "geospatialConfig": {
+              "type": "Geography"
+            },
+            "id": "apiUserConfig",
+            "indexingPolicy": {
+              "automatic": true,
+              "excludedPaths": [
+                {
+                  "path": "/\"_etag\"/?"
+                }
+              ],
+              "includedPaths": [
+                {
+                  "path": "/*"
+                }
+              ],
+              "indexingMode": "consistent"
+            },
+            "partitionKey": {
+              "kind": "Hash",
+              "paths": [
+                "/clientId"
+              ],
+              "version": 2
+            }
+          }
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers"
+      },
+      "changeType": "Modify",
+      "delta": [
+        {
+          "after": null,
+          "before": "/_ts",
+          "children": null,
+          "path": "properties.resource.conflictResolutionPolicy.conflictResolutionPath",
+          "propertyChangeType": "Delete"
+        },
+        {
+          "after": null,
+          "before": {
+            "defaultLanguage": "en-US",
+            "defaultSpec": {
+              "language": "en-US",
+              "stopWordListKind": "extended"
+            }
+          },
+          "children": null,
+          "path": "properties.resource.fullTextPolicy",
+          "propertyChangeType": "Delete"
+        },
+        {
+          "after": null,
+          "before": 2,
+          "children": null,
+          "path": "properties.resource.partitionKey.version",
+          "propertyChangeType": "Delete"
+        }
+      ],
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-paymentservices-dev-centralus/sqlDatabases/payments/containers/apiUserConfig",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-05-15",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-paymentservices-dev-centralus/sqlDatabases/payments/containers/partnerLedger",
+        "name": "partnerLedger",
+        "properties": {
+          "resource": {
+            "conflictResolutionPolicy": {
+              "mode": "LastWriterWins"
+            },
+            "geospatialConfig": {
+              "type": "Geography"
+            },
+            "id": "partnerLedger",
+            "indexingPolicy": {
+              "automatic": true,
+              "excludedPaths": [
+                {
+                  "path": "/\"_etag\"/?"
+                }
+              ],
+              "includedPaths": [
+                {
+                  "path": "/*"
+                }
+              ],
+              "indexingMode": "consistent"
+            },
+            "partitionKey": {
+              "kind": "Hash",
+              "paths": [
+                "/vAccountNumber"
+              ]
+            }
+          }
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers"
+      },
+      "before": {
+        "apiVersion": "2024-05-15",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-paymentservices-dev-centralus/sqlDatabases/payments/containers/partnerLedger",
+        "name": "partnerLedger",
+        "properties": {
+          "resource": {
+            "conflictResolutionPolicy": {
+              "conflictResolutionPath": "/_ts",
+              "mode": "LastWriterWins"
+            },
+            "fullTextPolicy": {
+              "defaultLanguage": "en-US",
+              "defaultSpec": {
+                "language": "en-US",
+                "stopWordListKind": "extended"
+              }
+            },
+            "geospatialConfig": {
+              "type": "Geography"
+            },
+            "id": "partnerLedger",
+            "indexingPolicy": {
+              "automatic": true,
+              "excludedPaths": [
+                {
+                  "path": "/\"_etag\"/?"
+                }
+              ],
+              "includedPaths": [
+                {
+                  "path": "/*"
+                }
+              ],
+              "indexingMode": "consistent"
+            },
+            "partitionKey": {
+              "kind": "Hash",
+              "paths": [
+                "/vAccountNumber"
+              ],
+              "version": 2
+            }
+          }
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers"
+      },
+      "changeType": "Modify",
+      "delta": [
+        {
+          "after": null,
+          "before": "/_ts",
+          "children": null,
+          "path": "properties.resource.conflictResolutionPolicy.conflictResolutionPath",
+          "propertyChangeType": "Delete"
+        },
+        {
+          "after": null,
+          "before": {
+            "defaultLanguage": "en-US",
+            "defaultSpec": {
+              "language": "en-US",
+              "stopWordListKind": "extended"
+            }
+          },
+          "children": null,
+          "path": "properties.resource.fullTextPolicy",
+          "propertyChangeType": "Delete"
+        },
+        {
+          "after": null,
+          "before": 2,
+          "children": null,
+          "path": "properties.resource.partitionKey.version",
+          "propertyChangeType": "Delete"
+        }
+      ],
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-paymentservices-dev-centralus/sqlDatabases/payments/containers/partnerLedger",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-05-15",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-paymentservices-dev-centralus/sqlDatabases/payments/containers/paymentIdempotency",
+        "name": "paymentIdempotency",
+        "properties": {
+          "resource": {
+            "conflictResolutionPolicy": {
+              "mode": "LastWriterWins"
+            },
+            "defaultTtl": -1,
+            "geospatialConfig": {
+              "type": "Geography"
+            },
+            "id": "paymentIdempotency",
+            "indexingPolicy": {
+              "automatic": true,
+              "excludedPaths": [
+                {
+                  "path": "/\"_etag\"/?"
+                }
+              ],
+              "includedPaths": [
+                {
+                  "path": "/*"
+                }
+              ],
+              "indexingMode": "consistent"
+            },
+            "partitionKey": {
+              "kind": "Hash",
+              "paths": [
+                "/paymentReference"
+              ]
+            }
+          }
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers"
+      },
+      "before": {
+        "apiVersion": "2024-05-15",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-paymentservices-dev-centralus/sqlDatabases/payments/containers/paymentIdempotency",
+        "name": "paymentIdempotency",
+        "properties": {
+          "resource": {
+            "conflictResolutionPolicy": {
+              "conflictResolutionPath": "/_ts",
+              "mode": "LastWriterWins"
+            },
+            "fullTextPolicy": {
+              "defaultLanguage": "en-US",
+              "defaultSpec": {
+                "language": "en-US",
+                "stopWordListKind": "extended"
+              }
+            },
+            "geospatialConfig": {
+              "type": "Geography"
+            },
+            "id": "paymentIdempotency",
+            "indexingPolicy": {
+              "automatic": true,
+              "excludedPaths": [
+                {
+                  "path": "/\"_etag\"/?"
+                }
+              ],
+              "includedPaths": [
+                {
+                  "path": "/*"
+                }
+              ],
+              "indexingMode": "consistent"
+            },
+            "partitionKey": {
+              "kind": "Hash",
+              "paths": [
+                "/paymentReference"
+              ],
+              "version": 2
+            }
+          }
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers"
+      },
+      "changeType": "Modify",
+      "delta": [
+        {
+          "after": null,
+          "before": "/_ts",
+          "children": null,
+          "path": "properties.resource.conflictResolutionPolicy.conflictResolutionPath",
+          "propertyChangeType": "Delete"
+        },
+        {
+          "after": null,
+          "before": {
+            "defaultLanguage": "en-US",
+            "defaultSpec": {
+              "language": "en-US",
+              "stopWordListKind": "extended"
+            }
+          },
+          "children": null,
+          "path": "properties.resource.fullTextPolicy",
+          "propertyChangeType": "Delete"
+        },
+        {
+          "after": null,
+          "before": 2,
+          "children": null,
+          "path": "properties.resource.partitionKey.version",
+          "propertyChangeType": "Delete"
+        },
+        {
+          "after": -1,
+          "before": null,
+          "children": null,
+          "path": "properties.resource.defaultTtl",
+          "propertyChangeType": "Create"
+        }
+      ],
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-paymentservices-dev-centralus/sqlDatabases/payments/containers/paymentIdempotency",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2024-05-15",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-paymentservices-dev-centralus/sqlDatabases/payments/containers/paymentRequests",
+        "name": "paymentRequests",
+        "properties": {
+          "resource": {
+            "conflictResolutionPolicy": {
+              "mode": "LastWriterWins"
+            },
+            "defaultTtl": -1,
+            "geospatialConfig": {
+              "type": "Geography"
+            },
+            "id": "paymentRequests",
+            "indexingPolicy": {
+              "automatic": true,
+              "excludedPaths": [
+                {
+                  "path": "/\"_etag\"/?"
+                }
+              ],
+              "includedPaths": [
+                {
+                  "path": "/*"
+                }
+              ],
+              "indexingMode": "consistent"
+            },
+            "partitionKey": {
+              "kind": "Hash",
+              "paths": [
+                "/evolveId"
+              ]
+            }
+          }
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers"
+      },
+      "before": {
+        "apiVersion": "2024-05-15",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-paymentservices-dev-centralus/sqlDatabases/payments/containers/paymentRequests",
+        "name": "paymentRequests",
+        "properties": {
+          "resource": {
+            "conflictResolutionPolicy": {
+              "conflictResolutionPath": "/_ts",
+              "mode": "LastWriterWins"
+            },
+            "fullTextPolicy": {
+              "defaultLanguage": "en-US",
+              "defaultSpec": {
+                "language": "en-US",
+                "stopWordListKind": "extended"
+              }
+            },
+            "geospatialConfig": {
+              "type": "Geography"
+            },
+            "id": "paymentRequests",
+            "indexingPolicy": {
+              "automatic": true,
+              "excludedPaths": [
+                {
+                  "path": "/\"_etag\"/?"
+                }
+              ],
+              "includedPaths": [
+                {
+                  "path": "/*"
+                }
+              ],
+              "indexingMode": "consistent"
+            },
+            "partitionKey": {
+              "kind": "Hash",
+              "paths": [
+                "/evolveId"
+              ],
+              "version": 2
+            }
+          }
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers"
+      },
+      "changeType": "Modify",
+      "delta": [
+        {
+          "after": null,
+          "before": "/_ts",
+          "children": null,
+          "path": "properties.resource.conflictResolutionPolicy.conflictResolutionPath",
+          "propertyChangeType": "Delete"
+        },
+        {
+          "after": null,
+          "before": {
+            "defaultLanguage": "en-US",
+            "defaultSpec": {
+              "language": "en-US",
+              "stopWordListKind": "extended"
+            }
+          },
+          "children": null,
+          "path": "properties.resource.fullTextPolicy",
+          "propertyChangeType": "Delete"
+        },
+        {
+          "after": null,
+          "before": 2,
+          "children": null,
+          "path": "properties.resource.partitionKey.version",
+          "propertyChangeType": "Delete"
+        },
+        {
+          "after": -1,
+          "before": null,
+          "children": null,
+          "path": "properties.resource.defaultTtl",
+          "propertyChangeType": "Create"
+        }
+      ],
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-paymentservices-dev-centralus/sqlDatabases/payments/containers/paymentRequests",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus",
+        "kind": "web",
+        "location": "centralus",
+        "name": "appi-paymentservices-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "Mkhan",
+          "Environment": "Dev",
+          "Purpose": "Wires"
+        },
+        "type": "microsoft.insights/components"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus",
+        "kind": "web",
+        "location": "centralus",
+        "name": "appi-paymentservices-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "Mkhan",
+          "Environment": "Dev",
+          "Purpose": "Wires"
+        },
+        "type": "microsoft.insights/components"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/fa-pmtsvc-ledger",
+        "kind": "web",
+        "location": "eastus",
+        "name": "fa-pmtsvc-ledger",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "pdumlao.dev",
+          "Environment": "Dev"
+        },
+        "type": "microsoft.insights/components"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/fa-pmtsvc-ledger",
+        "kind": "web",
+        "location": "eastus",
+        "name": "fa-pmtsvc-ledger",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "pdumlao.dev",
+          "Environment": "Dev"
+        },
+        "type": "microsoft.insights/components"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/fa-pmtsvc-ledger",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/fa-pmtsvc-rtpReconciliation-dev-eastus",
+        "kind": "web",
+        "location": "centralus",
+        "name": "fa-pmtsvc-rtpReconciliation-dev-eastus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "Dev"
+        },
+        "type": "microsoft.insights/components"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/fa-pmtsvc-rtpReconciliation-dev-eastus",
+        "kind": "web",
+        "location": "centralus",
+        "name": "fa-pmtsvc-rtpReconciliation-dev-eastus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "Dev"
+        },
+        "type": "microsoft.insights/components"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/fa-pmtsvc-rtpReconciliation-dev-eastus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.KeyVault/vaults/kv-pmtsvc-dev-centralus",
+        "location": "centralus",
+        "name": "kv-pmtsvc-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "Mkhan",
+          "Environment": "Dev",
+          "Purpose": "Create RTP endpoints"
+        },
+        "type": "Microsoft.KeyVault/vaults"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.KeyVault/vaults/kv-pmtsvc-dev-centralus",
+        "location": "centralus",
+        "name": "kv-pmtsvc-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "Mkhan",
+          "Environment": "Dev",
+          "Purpose": "Create RTP endpoints"
+        },
+        "type": "Microsoft.KeyVault/vaults"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.KeyVault/vaults/kv-pmtsvc-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-devops-dev-centralus",
+        "location": "centralus",
+        "name": "id-devops-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Dveloper": "Mkhan",
+          "Environment": "Dev",
+          "Purpose": "Azure Deployments"
+        },
+        "type": "Microsoft.ManagedIdentity/userAssignedIdentities"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-devops-dev-centralus",
+        "location": "centralus",
+        "name": "id-devops-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Dveloper": "Mkhan",
+          "Environment": "Dev",
+          "Purpose": "Azure Deployments"
+        },
+        "type": "Microsoft.ManagedIdentity/userAssignedIdentities"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-devops-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus",
+        "location": "centralus",
+        "name": "id-pmtsvc-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "MKhan",
+          "Environment": "Dev",
+          "Purpose": "Create RTP Payment endpoints"
+        },
+        "type": "Microsoft.ManagedIdentity/userAssignedIdentities"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus",
+        "location": "centralus",
+        "name": "id-pmtsvc-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "MKhan",
+          "Environment": "Dev",
+          "Purpose": "Create RTP Payment endpoints"
+        },
+        "type": "Microsoft.ManagedIdentity/userAssignedIdentities"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.ServiceBus/namespaces/sb-pmtsvc-dev-centralus",
+        "location": "centralus",
+        "name": "sb-pmtsvc-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital"
+        },
+        "type": "Microsoft.ServiceBus/namespaces"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.ServiceBus/namespaces/sb-pmtsvc-dev-centralus",
+        "location": "centralus",
+        "name": "sb-pmtsvc-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital"
+        },
+        "type": "Microsoft.ServiceBus/namespaces"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.ServiceBus/namespaces/sb-pmtsvc-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2022-10-01-preview",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.ServiceBus/namespaces/sb-pmtsvc-dev-centralus/topics/payment-processing/subscriptions/rtpsend-process",
+        "name": "rtpsend-process",
+        "properties": {
+          "deadLetteringOnFilterEvaluationExceptions": true,
+          "deadLetteringOnMessageExpiration": true,
+          "defaultMessageTimeToLive": "P14D",
+          "enableBatchedOperations": true,
+          "lockDuration": "PT5M",
+          "maxDeliveryCount": 10,
+          "requiresSession": false
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.ServiceBus/namespaces/topics/subscriptions"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.ServiceBus/namespaces/sb-pmtsvc-dev-centralus/topics/payment-processing/subscriptions/rtpsend-process",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2022-10-01-preview",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.ServiceBus/namespaces/sb-pmtsvc-dev-centralus/topics/payment-processing/subscriptions/rtpsend-process/rules/$Default",
+        "name": "$Default",
+        "properties": {
+          "correlationFilter": {
+            "label": "CreatePaymentRequest"
+          },
+          "filterType": "CorrelationFilter"
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.ServiceBus/namespaces/topics/subscriptions/rules"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.ServiceBus/namespaces/sb-pmtsvc-dev-centralus/topics/payment-processing/subscriptions/rtpsend-process/rules/$Default",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/rgpmtsvcdev8954",
+        "kind": "StorageV2",
+        "location": "eastus",
+        "name": "rgpmtsvcdev8954",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Developer": "pdumlao.dev",
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/rgpmtsvcdev8954",
+        "kind": "StorageV2",
+        "location": "eastus",
+        "name": "rgpmtsvcdev8954",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Developer": "pdumlao.dev",
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/rgpmtsvcdev8954",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/rgpmtsvcdev8ef1",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "rgpmtsvcdev8ef1",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Developer": "pdumlao.dev",
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/rgpmtsvcdev8ef1",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "rgpmtsvcdev8ef1",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Developer": "pdumlao.dev",
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/rgpmtsvcdev8ef1",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/rgpmtsvcdev8f45",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "rgpmtsvcdev8f45",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Developer": "PDumlao",
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/rgpmtsvcdev8f45",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "rgpmtsvcdev8f45",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Developer": "PDumlao",
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/rgpmtsvcdev8f45",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/rgpmtsvcdev9ac9",
+        "kind": "Storage",
+        "location": "centralus",
+        "name": "rgpmtsvcdev9ac9",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/rgpmtsvcdev9ac9",
+        "kind": "Storage",
+        "location": "centralus",
+        "name": "rgpmtsvcdev9ac9",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/rgpmtsvcdev9ac9",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/rgpmtsvcdeva120",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "rgpmtsvcdeva120",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Developer": "PDumlao.Dev",
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/rgpmtsvcdeva120",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "rgpmtsvcdeva120",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Developer": "PDumlao.Dev",
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/rgpmtsvcdeva120",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/rgpmtsvcdevb4f6",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "rgpmtsvcdevb4f6",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Developer": "pdumlao.dev",
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/rgpmtsvcdevb4f6",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "rgpmtsvcdevb4f6",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Developer": "pdumlao.dev",
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/rgpmtsvcdevb4f6",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stpmtsvcacctresdev",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "stpmtsvcacctresdev",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stpmtsvcacctresdev",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "stpmtsvcacctresdev",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stpmtsvcacctresdev",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stpmtsvccompliancedev",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "stpmtsvccompliancedev",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stpmtsvccompliancedev",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "stpmtsvccompliancedev",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stpmtsvccompliancedev",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stpmtsvcevtnotifdev",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "stpmtsvcevtnotifdev",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stpmtsvcevtnotifdev",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "stpmtsvcevtnotifdev",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stpmtsvcevtnotifdev",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stpmtsvcgatewaydev",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "stpmtsvcgatewaydev",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stpmtsvcgatewaydev",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "stpmtsvcgatewaydev",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stpmtsvcgatewaydev",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2023-05-01",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stpmtsvcrtpsenddev",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "stpmtsvcrtpsenddev",
+        "properties": {
+          "allowBlobPublicAccess": false,
+          "allowSharedKeyAccess": true,
+          "encryption": {
+            "keySource": "Microsoft.Storage"
+          },
+          "minimumTlsVersion": "TLS1_2",
+          "publicNetworkAccess": "Enabled",
+          "supportsHttpsTrafficOnly": true
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stpmtsvcrtpsenddev",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stpmtsvctransferdev",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "stpmtsvctransferdev",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stpmtsvctransferdev",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "stpmtsvctransferdev",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stpmtsvctransferdev",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/sttestfacentralus",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "sttestfacentralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/sttestfacentralus",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "sttestfacentralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/sttestfacentralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stthreatgriddev",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "stthreatgriddev",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Developer": "MKhan",
+          "Environment": "Dev",
+          "Purpose": "Threat Grid"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stthreatgriddev",
+        "kind": "StorageV2",
+        "location": "centralus",
+        "name": "stthreatgriddev",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Developer": "MKhan",
+          "Environment": "Dev",
+          "Purpose": "Threat Grid"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stthreatgriddev",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stwiresynccentralus",
+        "kind": "Storage",
+        "location": "centralus",
+        "name": "stwiresynccentralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Developer": "Mkhan",
+          "Environment": "Dev",
+          "Purpose": "Wires"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stwiresynccentralus",
+        "kind": "Storage",
+        "location": "centralus",
+        "name": "stwiresynccentralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "name": "Standard_LRS",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Developer": "Mkhan",
+          "Environment": "Dev",
+          "Purpose": "Wires"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Storage/storageAccounts/stwiresynccentralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/serverFarms/appcs-pmtsvc-dev-centralus",
+        "kind": "elastic",
+        "location": "centralus",
+        "name": "appcs-pmtsvc-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "capacity": 1,
+          "family": "EP",
+          "name": "EP1",
+          "size": "EP1",
+          "tier": "ElasticPremium"
+        },
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital"
+        },
+        "type": "Microsoft.Web/serverFarms"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/serverFarms/appcs-pmtsvc-dev-centralus",
+        "kind": "elastic",
+        "location": "centralus",
+        "name": "appcs-pmtsvc-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "capacity": 1,
+          "family": "EP",
+          "name": "EP1",
+          "size": "EP1",
+          "tier": "ElasticPremium"
+        },
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital"
+        },
+        "type": "Microsoft.Web/serverFarms"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/serverFarms/appcs-pmtsvc-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/serverFarms/asp-alloyintegration-dev-centralus",
+        "kind": "app",
+        "location": "centralus",
+        "name": "asp-alloyintegration-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "capacity": 1,
+          "family": "S",
+          "name": "S1",
+          "size": "S1",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Web/serverFarms"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/serverFarms/asp-alloyintegration-dev-centralus",
+        "kind": "app",
+        "location": "centralus",
+        "name": "asp-alloyintegration-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "capacity": 1,
+          "family": "S",
+          "name": "S1",
+          "size": "S1",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Web/serverFarms"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/serverFarms/asp-alloyintegration-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/serverFarms/asp-paymentservices-dev-centralus",
+        "kind": "app",
+        "location": "centralus",
+        "name": "asp-paymentservices-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "capacity": 1,
+          "family": "S",
+          "name": "S2",
+          "size": "S2",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Developer": "Mkhan",
+          "Environment": "Dev",
+          "Purpose": "Create RTP endpoints"
+        },
+        "type": "Microsoft.Web/serverFarms"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/serverFarms/asp-paymentservices-dev-centralus",
+        "kind": "app",
+        "location": "centralus",
+        "name": "asp-paymentservices-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "capacity": 1,
+          "family": "S",
+          "name": "S2",
+          "size": "S2",
+          "tier": "Standard"
+        },
+        "tags": {
+          "Developer": "Mkhan",
+          "Environment": "Dev",
+          "Purpose": "Create RTP endpoints"
+        },
+        "type": "Microsoft.Web/serverFarms"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/serverFarms/asp-paymentservices-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2023-12-01",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/serverfarms/asp-pmtsvc-rtpsend-dev-centralus",
+        "kind": "elastic",
+        "location": "centralus",
+        "name": "asp-pmtsvc-rtpsend-dev-centralus",
+        "properties": {
+          "elasticScaleEnabled": true,
+          "reserved": false,
+          "zoneRedundant": false
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "capacity": 1,
+          "name": "EP1"
+        },
+        "type": "Microsoft.Web/serverfarms"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/serverfarms/asp-pmtsvc-rtpsend-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/serverFarms/ASP-rgpmtsvcdev-a259",
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "ASP-rgpmtsvcdev-a259",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "capacity": 0,
+          "family": "Y",
+          "name": "Y1",
+          "size": "Y1",
+          "tier": "Dynamic"
+        },
+        "tags": {
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Web/serverFarms"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/serverFarms/ASP-rgpmtsvcdev-a259",
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "ASP-rgpmtsvcdev-a259",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "capacity": 0,
+          "family": "Y",
+          "name": "Y1",
+          "size": "Y1",
+          "tier": "Dynamic"
+        },
+        "tags": {
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Web/serverFarms"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/serverFarms/ASP-rgpmtsvcdev-a259",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/serverFarms/ASP-rgpmtsvcdev-a79c",
+        "kind": "linux",
+        "location": "centralus",
+        "name": "ASP-rgpmtsvcdev-a79c",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "capacity": 1,
+          "family": "B",
+          "name": "B1",
+          "size": "B1",
+          "tier": "Basic"
+        },
+        "tags": {
+          "Developer": "AHopper",
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Web/serverFarms"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/serverFarms/ASP-rgpmtsvcdev-a79c",
+        "kind": "linux",
+        "location": "centralus",
+        "name": "ASP-rgpmtsvcdev-a79c",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "sku": {
+          "capacity": 1,
+          "family": "B",
+          "name": "B1",
+          "size": "B1",
+          "tier": "Basic"
+        },
+        "tags": {
+          "Developer": "AHopper",
+          "Environment": "Dev"
+        },
+        "type": "Microsoft.Web/serverFarms"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/serverFarms/ASP-rgpmtsvcdev-a79c",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/app-alloyintegration-dev-centralus",
+        "identity": {
+          "type": "UserAssigned",
+          "userAssignedIdentities": {
+            "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourcegroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus": {}
+          }
+        },
+        "kind": "app",
+        "location": "centralus",
+        "name": "app-alloyintegration-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "MKhan",
+          "Environment": "Dev",
+          "Purpose": "Alloy Integration",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/app-alloyintegration-dev-centralus",
+        "identity": {
+          "type": "UserAssigned",
+          "userAssignedIdentities": {
+            "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourcegroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus": {}
+          }
+        },
+        "kind": "app",
+        "location": "centralus",
+        "name": "app-alloyintegration-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "MKhan",
+          "Environment": "Dev",
+          "Purpose": "Alloy Integration",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/app-alloyintegration-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/app-ecco-dev-centralus",
+        "identity": {
+          "type": "UserAssigned",
+          "userAssignedIdentities": {
+            "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourcegroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus": {}
+          }
+        },
+        "kind": "app,linux",
+        "location": "centralus",
+        "name": "app-ecco-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "AHopper",
+          "Environment": "Dev",
+          "Project": "Ecco Ledger",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/app-ecco-dev-centralus",
+        "identity": {
+          "type": "UserAssigned",
+          "userAssignedIdentities": {
+            "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourcegroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus": {}
+          }
+        },
+        "kind": "app,linux",
+        "location": "centralus",
+        "name": "app-ecco-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "AHopper",
+          "Environment": "Dev",
+          "Project": "Ecco Ledger",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/app-ecco-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/app-pmtrestsvc-dev-centralus",
+        "identity": {
+          "type": "UserAssigned",
+          "userAssignedIdentities": {
+            "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourcegroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus": {}
+          }
+        },
+        "kind": "app",
+        "location": "centralus",
+        "name": "app-pmtrestsvc-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "Dev",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/app-pmtrestsvc-dev-centralus",
+        "identity": {
+          "type": "UserAssigned",
+          "userAssignedIdentities": {
+            "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourcegroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus": {}
+          }
+        },
+        "kind": "app",
+        "location": "centralus",
+        "name": "app-pmtrestsvc-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "Dev",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/app-pmtrestsvc-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/app-pmtrestsvc-ui-dev-centralus",
+        "kind": "app",
+        "location": "centralus",
+        "name": "app-pmtrestsvc-ui-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "Dev",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/app-pmtrestsvc-ui-dev-centralus",
+        "kind": "app",
+        "location": "centralus",
+        "name": "app-pmtrestsvc-ui-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "Dev",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/app-pmtrestsvc-ui-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-acctres-dev-centralus",
+        "identity": {
+          "type": "UserAssigned",
+          "userAssignedIdentities": {
+            "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourcegroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus": {}
+          }
+        },
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "fa-pmtsvc-acctres-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-acctres-dev-centralus",
+        "identity": {
+          "type": "UserAssigned",
+          "userAssignedIdentities": {
+            "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourcegroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus": {}
+          }
+        },
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "fa-pmtsvc-acctres-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-acctres-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-compliance-dev-centralus",
+        "identity": {
+          "type": "UserAssigned",
+          "userAssignedIdentities": {
+            "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourcegroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus": {}
+          }
+        },
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "fa-pmtsvc-compliance-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-compliance-dev-centralus",
+        "identity": {
+          "type": "UserAssigned",
+          "userAssignedIdentities": {
+            "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourcegroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus": {}
+          }
+        },
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "fa-pmtsvc-compliance-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-compliance-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-evtnotif-dev-centralus",
+        "identity": {
+          "type": "UserAssigned",
+          "userAssignedIdentities": {
+            "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourcegroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus": {}
+          }
+        },
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "fa-pmtsvc-evtnotif-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-evtnotif-dev-centralus",
+        "identity": {
+          "type": "UserAssigned",
+          "userAssignedIdentities": {
+            "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourcegroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus": {}
+          }
+        },
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "fa-pmtsvc-evtnotif-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-evtnotif-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-gateway-dev-centralus",
+        "identity": {
+          "type": "UserAssigned",
+          "userAssignedIdentities": {
+            "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourcegroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus": {}
+          }
+        },
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "fa-pmtsvc-gateway-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-gateway-dev-centralus",
+        "identity": {
+          "type": "UserAssigned",
+          "userAssignedIdentities": {
+            "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourcegroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus": {}
+          }
+        },
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "fa-pmtsvc-gateway-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-gateway-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-ledger-dev-centralus",
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "fa-pmtsvc-ledger-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "PDumlao",
+          "Environment": "Dev",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-ledger-dev-centralus",
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "fa-pmtsvc-ledger-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "PDumlao",
+          "Environment": "Dev",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-ledger-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-limits-dev-cus",
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "fa-pmtsvc-limits-dev-cus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "PDumlao.Dev",
+          "Environment": "Dev",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-limits-dev-cus",
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "fa-pmtsvc-limits-dev-cus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "PDumlao.Dev",
+          "Environment": "Dev",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-limits-dev-cus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "apiVersion": "2023-12-01",
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-rtpsend-dev-centralus",
+        "identity": "*******",
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "fa-pmtsvc-rtpsend-dev-centralus",
+        "properties": {
+          "clientAffinityEnabled": false,
+          "httpsOnly": true,
+          "keyVaultReferenceIdentity": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus",
+          "publicNetworkAccess": "Enabled",
+          "serverFarmId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/serverfarms/asp-pmtsvc-rtpsend-dev-centralus",
+          "siteConfig": "*******"
+        },
+        "resourceGroup": "rg-pmtsvc-dev",
+        "type": "Microsoft.Web/sites"
+      },
+      "before": null,
+      "changeType": "Create",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-rtpsend-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-testfa-dev-centralus",
+        "identity": {
+          "type": "UserAssigned",
+          "userAssignedIdentities": {
+            "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourcegroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus": {}
+          }
+        },
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "fa-pmtsvc-testfa-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "Dev",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-testfa-dev-centralus",
+        "identity": {
+          "type": "UserAssigned",
+          "userAssignedIdentities": {
+            "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourcegroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus": {}
+          }
+        },
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "fa-pmtsvc-testfa-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "Dev",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-testfa-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-transfer-dev-centralus",
+        "identity": {
+          "type": "UserAssigned",
+          "userAssignedIdentities": {
+            "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourcegroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus": {}
+          }
+        },
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "fa-pmtsvc-transfer-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-transfer-dev-centralus",
+        "identity": {
+          "type": "UserAssigned",
+          "userAssignedIdentities": {
+            "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourcegroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus": {}
+          }
+        },
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "fa-pmtsvc-transfer-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Environment": "DEV",
+          "Team": "Services",
+          "Train": "Digital",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-transfer-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-watermark-dev-cus",
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "fa-pmtsvc-watermark-dev-cus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "pdumlao.dev",
+          "Environment": "Dev",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-watermark-dev-cus",
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "fa-pmtsvc-watermark-dev-cus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "pdumlao.dev",
+          "Environment": "Dev",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-watermark-dev-cus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    },
+    {
+      "after": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-wiresync-dev-centralus",
+        "identity": {
+          "type": "UserAssigned",
+          "userAssignedIdentities": {
+            "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourcegroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus": {}
+          }
+        },
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "fa-pmtsvc-wiresync-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "Mkhan",
+          "Environment": "Dev",
+          "Purpose": "Wires",
+          "hidden-link: /app-insights-conn-string": "InstrumentationKey=edbd0833-df3b-4672-9f26-f6191822f35f;IngestionEndpoint=https://centralus-2.in.applicationinsights.azure.com/;LiveEndpoint=https://centralus.livediagnostics.monitor.azure.com/;ApplicationId=da2704a7-bf82-4444-81f1-e9df6dd542aa",
+          "hidden-link: /app-insights-instrumentation-key": "edbd0833-df3b-4672-9f26-f6191822f35f",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "before": {
+        "id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-wiresync-dev-centralus",
+        "identity": {
+          "type": "UserAssigned",
+          "userAssignedIdentities": {
+            "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourcegroups/rg-pmtsvc-dev/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-pmtsvc-dev-centralus": {}
+          }
+        },
+        "kind": "functionapp",
+        "location": "centralus",
+        "name": "fa-pmtsvc-wiresync-dev-centralus",
+        "resourceGroup": "rg-pmtsvc-dev",
+        "tags": {
+          "Developer": "Mkhan",
+          "Environment": "Dev",
+          "Purpose": "Wires",
+          "hidden-link: /app-insights-conn-string": "InstrumentationKey=edbd0833-df3b-4672-9f26-f6191822f35f;IngestionEndpoint=https://centralus-2.in.applicationinsights.azure.com/;LiveEndpoint=https://centralus.livediagnostics.monitor.azure.com/;ApplicationId=da2704a7-bf82-4444-81f1-e9df6dd542aa",
+          "hidden-link: /app-insights-instrumentation-key": "edbd0833-df3b-4672-9f26-f6191822f35f",
+          "hidden-link: /app-insights-resource-id": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/microsoft.insights/components/appi-paymentservices-dev-centralus"
+        },
+        "type": "Microsoft.Web/sites"
+      },
+      "changeType": "Ignore",
+      "delta": null,
+      "deploymentId": null,
+      "extension": null,
+      "identifiers": null,
+      "resourceId": "/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Web/sites/fa-pmtsvc-wiresync-dev-centralus",
+      "symbolicName": null,
+      "unsupportedReason": null
+    }
+  ],
+  "diagnostics": null,
+  "error": null,
+  "potentialChanges": null,
+  "status": "Succeeded"
+}
