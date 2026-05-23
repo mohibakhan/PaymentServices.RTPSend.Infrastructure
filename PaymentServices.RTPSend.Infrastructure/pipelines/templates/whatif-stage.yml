@@ -1,0 +1,93 @@
+# =============================================================================
+# What-If stage template
+#
+# Shows the diff between the current state of Azure resources and what the
+# template would do. Read-only. Output is in the build log.
+#
+# Includes a safety check: if the what-if output contains any "Delete" actions,
+# the job fails. This template is designed to NEVER delete anything, so
+# detecting a delete in what-if means something is wrong with the template.
+# =============================================================================
+
+parameters:
+  - name: serviceConnectionName
+    type: string
+  - name: resourceGroupName
+    type: string
+  - name: templateFile
+    type: string
+  - name: parameterFile
+    type: string
+  - name: environment
+    type: string
+
+jobs:
+  - job: WhatIf
+    displayName: 'What-If preview for ${{ parameters.environment }}'
+    steps:
+
+      - checkout: self
+        displayName: 'Checkout repo'
+
+      - task: AzureCLI@2
+        displayName: 'Run az deployment group what-if'
+        inputs:
+          azureSubscription: ${{ parameters.serviceConnectionName }}
+          scriptType: pscore
+          scriptLocation: inlineScript
+          inlineScript: |
+            $whatIfOutputPath = Join-Path $(Build.ArtifactStagingDirectory) "whatif-result.json"
+
+            Write-Host "----------------------------------------------------------------"
+            Write-Host " WHAT-IF: ${{ parameters.environment }} (${{ parameters.resourceGroupName }})"
+            Write-Host "----------------------------------------------------------------"
+
+            # Human-readable output to the log
+            az deployment group what-if `
+              --resource-group "${{ parameters.resourceGroupName }}" `
+              --template-file "${{ parameters.templateFile }}" `
+              --parameters "${{ parameters.parameterFile }}"
+
+            $exitCode = $LASTEXITCODE
+            if ($exitCode -ne 0) {
+              Write-Error "What-if invocation failed (exit code $exitCode)."
+              exit $exitCode
+            }
+
+            # Same call again, but JSON output, to programmatically detect deletes
+            Write-Host ""
+            Write-Host "Capturing JSON output for delete detection..."
+            az deployment group what-if `
+              --resource-group "${{ parameters.resourceGroupName }}" `
+              --template-file "${{ parameters.templateFile }}" `
+              --parameters "${{ parameters.parameterFile }}" `
+              --no-pretty-print | Out-File -FilePath $whatIfOutputPath -Encoding utf8
+
+            $whatIfJson = Get-Content $whatIfOutputPath -Raw | ConvertFrom-Json
+            $deletes = $whatIfJson.changes | Where-Object { $_.changeType -eq "Delete" }
+
+            if ($deletes.Count -gt 0) {
+              Write-Host ""
+              Write-Host "##[error]==============================================================="
+              Write-Host "##[error] WHAT-IF DETECTED DELETE OPERATIONS"
+              Write-Host "##[error]==============================================================="
+              Write-Host "##[error] This template is designed to never delete anything."
+              Write-Host "##[error] A Delete in what-if means either:"
+              Write-Host "##[error]   - A resource was removed from the template that exists in Azure"
+              Write-Host "##[error]   - The deployment is being run with the wrong --mode"
+              Write-Host "##[error]   - There is a bug in the template"
+              Write-Host "##[error]"
+              Write-Host "##[error] Resources that would be deleted:"
+              foreach ($d in $deletes) {
+                Write-Host "##[error]   - $($d.resourceId)"
+              }
+              Write-Error "Refusing to proceed. Investigate before running deploy."
+              exit 1
+            }
+
+            Write-Host ""
+            Write-Host "No Delete actions detected. Template is safe to deploy."
+
+      - publish: $(Build.ArtifactStagingDirectory)/whatif-result.json
+        artifact: whatif-${{ parameters.environment }}
+        displayName: 'Publish what-if result as artifact'
