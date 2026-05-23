@@ -13,12 +13,12 @@
 #                  'rtpsend-infra-{env}', which carries approval policies.
 #
 # Pre-deployment ADO setup (one-time):
-#   - The 3 service connections (Azure Resource Manager) already exist
-#     in the project from the PaymentServices.Infrastructure setup:
-#         AzureServiceConnection-DEV
-#         AzureServiceConnection-QA
-#         AzureServiceConnection-PROD
-#     The underlying SP must have Contributor on rg-pmtsvc-{env}-centralus.
+#   - The 3 service connections (Azure Resource Manager / workload identity)
+#     already exist in the project from the PaymentServices.Infrastructure setup:
+#         rg-pmsvc-dev-SvcCon-WI
+#         rg-pmsvc-qa-SvcCon-WI
+#         rg-pmsvc-prod-SvcCon-WI
+#     The underlying SP must have Contributor on rg-pmtsvc-{env}.
 #
 #   - Create 3 ADO Environments specific to RTPSend infra:
 #         rtpsend-infra-dev, rtpsend-infra-qa, rtpsend-infra-prod
@@ -45,14 +45,14 @@ parameters:
 
 variables:
   # Map env -> service connection. The service connection names below match
-  # the existing PaymentServices convention.
+  # what's configured in Project Settings -> Service connections.
   - name: serviceConnectionName
     ${{ if eq(parameters.environment, 'dev') }}:
-      value: AzureServiceConnection-DEV
+      value: rg-pmsvc-dev-SvcCon-WI
     ${{ if eq(parameters.environment, 'qa') }}:
-      value: AzureServiceConnection-QA
+      value: rg-pmsvc-qa-SvcCon-WI
     ${{ if eq(parameters.environment, 'prod') }}:
-      value: AzureServiceConnection-PROD
+      value: rg-pmsvc-prod-SvcCon-WI
 
   # Map env -> target resource group name. Region suffix matches the
   # existing platform convention (centralus).
