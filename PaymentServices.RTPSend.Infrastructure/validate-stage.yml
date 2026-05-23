@@ -1,0 +1,91 @@
+# =============================================================================
+# Validate stage template
+#
+# Compiles the bicep, then asks ARM to validate the resulting deployment
+# without applying anything. Catches typos in property names, missing
+# parameters, invalid SKU strings, etc. before they fail at deploy time.
+# =============================================================================
+
+parameters:
+  - name: serviceConnectionName
+    type: string
+  - name: resourceGroupName
+    type: string
+  - name: templateFile
+    type: string
+  - name: parameterFile
+    type: string
+  - name: environment
+    type: string
+
+jobs:
+  - job: Validate
+    displayName: 'Validate bicep for ${{ parameters.environment }}'
+    pool:
+      vmImage: windows-latest
+    steps:
+
+      - checkout: self
+        displayName: 'Checkout repo'
+
+      - task: AzureCLI@2
+        displayName: 'Show pipeline context'
+        inputs:
+          azureSubscription: ${{ parameters.serviceConnectionName }}
+          scriptType: pscore
+          scriptLocation: inlineScript
+          inlineScript: |
+            Write-Host "Environment        : ${{ parameters.environment }}"
+            Write-Host "Resource group     : ${{ parameters.resourceGroupName }}"
+            Write-Host "Template file      : ${{ parameters.templateFile }}"
+            Write-Host "Parameter file     : ${{ parameters.parameterFile }}"
+            Write-Host "Service connection : ${{ parameters.serviceConnectionName }}"
+            az --version
+            az account show --output table
+
+      - task: AzureCLI@2
+        displayName: 'Verify resource group exists'
+        inputs:
+          azureSubscription: ${{ parameters.serviceConnectionName }}
+          scriptType: pscore
+          scriptLocation: inlineScript
+          inlineScript: |
+            $rg = "${{ parameters.resourceGroupName }}"
+            $exists = az group exists --name $rg
+            if ($exists -ne "true") {
+              Write-Error "Resource group '$rg' does not exist. Create it manually first; this pipeline does not create resource groups."
+              exit 1
+            }
+            Write-Host "Resource group '$rg' exists."
+
+      - task: AzureCLI@2
+        displayName: 'Bicep build (lint + transpile)'
+        inputs:
+          azureSubscription: ${{ parameters.serviceConnectionName }}
+          scriptType: pscore
+          scriptLocation: inlineScript
+          inlineScript: |
+            Write-Host "Compiling ${{ parameters.templateFile }} -> ARM JSON to surface any lint warnings..."
+            az bicep build --file ${{ parameters.templateFile }} --outdir $(Build.ArtifactStagingDirectory)
+            if ($LASTEXITCODE -ne 0) {
+              Write-Error "bicep build failed."
+              exit $LASTEXITCODE
+            }
+            Get-ChildItem $(Build.ArtifactStagingDirectory)
+
+      - task: AzureCLI@2
+        displayName: 'az deployment group validate'
+        inputs:
+          azureSubscription: ${{ parameters.serviceConnectionName }}
+          scriptType: pscore
+          scriptLocation: inlineScript
+          inlineScript: |
+            az deployment group validate `
+              --resource-group "${{ parameters.resourceGroupName }}" `
+              --template-file "${{ parameters.templateFile }}" `
+              --parameters "${{ parameters.parameterFile }}"
+            if ($LASTEXITCODE -ne 0) {
+              Write-Error "ARM validation failed."
+              exit $LASTEXITCODE
+            }
+            Write-Host "Validation succeeded."

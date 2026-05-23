@@ -1,0 +1,92 @@
+# =============================================================================
+# Deploy stage template
+#
+# Uses an ADO Environment to gate the deployment. The Environment name
+# (e.g. 'rtpsend-infra-qa') controls who can approve, what manual gates
+# apply, and where the deployment shows up in the ADO Environments view.
+#
+# Always runs with --mode Incremental. Never use Complete mode — that would
+# delete resources not in the template.
+# =============================================================================
+
+parameters:
+  - name: serviceConnectionName
+    type: string
+  - name: resourceGroupName
+    type: string
+  - name: templateFile
+    type: string
+  - name: parameterFile
+    type: string
+  - name: environment
+    type: string
+  - name: deploymentEnvironmentName
+    type: string
+
+jobs:
+  - deployment: Deploy
+    displayName: 'Deploy to ${{ parameters.environment }}'
+    environment: ${{ parameters.deploymentEnvironmentName }}
+    pool:
+      vmImage: windows-latest
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+
+            - checkout: self
+              displayName: 'Checkout repo'
+
+            - task: AzureCLI@2
+              displayName: 'Confirm action and target'
+              inputs:
+                azureSubscription: ${{ parameters.serviceConnectionName }}
+                scriptType: pscore
+                scriptLocation: inlineScript
+                inlineScript: |
+                  Write-Host "================================================================"
+                  Write-Host "  DEPLOYING TO: ${{ parameters.environment }}"
+                  Write-Host "  Resource group: ${{ parameters.resourceGroupName }}"
+                  Write-Host "  Template:       ${{ parameters.templateFile }}"
+                  Write-Host "  Parameters:     ${{ parameters.parameterFile }}"
+                  Write-Host "  Mode:           Incremental (never deletes)"
+                  Write-Host "================================================================"
+                  az account show --output table
+
+            - task: AzureCLI@2
+              displayName: 'az deployment group create (Incremental)'
+              inputs:
+                azureSubscription: ${{ parameters.serviceConnectionName }}
+                scriptType: pscore
+                scriptLocation: inlineScript
+                inlineScript: |
+                  $deploymentName = "rtpsend-infra-$(Build.BuildId)"
+
+                  az deployment group create `
+                    --name "$deploymentName" `
+                    --resource-group "${{ parameters.resourceGroupName }}" `
+                    --template-file "${{ parameters.templateFile }}" `
+                    --parameters "${{ parameters.parameterFile }}" `
+                    --mode Incremental `
+                    --output table
+
+                  if ($LASTEXITCODE -ne 0) {
+                    Write-Error "Deployment failed (exit code $LASTEXITCODE)."
+                    exit $LASTEXITCODE
+                  }
+                  Write-Host "Deployment '$deploymentName' completed successfully."
+
+            - task: AzureCLI@2
+              displayName: 'Show deployment outputs'
+              inputs:
+                azureSubscription: ${{ parameters.serviceConnectionName }}
+                scriptType: pscore
+                scriptLocation: inlineScript
+                inlineScript: |
+                  $deploymentName = "rtpsend-infra-$(Build.BuildId)"
+                  Write-Host "Outputs from deployment '$deploymentName':"
+                  az deployment group show `
+                    --name "$deploymentName" `
+                    --resource-group "${{ parameters.resourceGroupName }}" `
+                    --query properties.outputs `
+                    --output json
