@@ -14,10 +14,10 @@
 #
 # Pre-deployment ADO setup (one-time):
 #   - The 3 service connections (Azure Resource Manager / workload identity)
-#     already exist in the project from the PaymentServices.Infrastructure setup:
-#         rg-pmsvc-dev-SvcCon-WI
-#         rg-pmsvc-qa-SvcCon-WI
-#         rg-pmsvc-prod-SvcCon-WI
+#     already exist in the project:
+#         Dev-Evolve-SvcCon
+#         QA-Evolve-SvcCon
+#         rg-pmtsvc-prod-SvcCon-WI
 #     The underlying SP must have Contributor on rg-pmtsvc-{env}.
 #
 #   - Create 3 ADO Environments specific to RTPSend infra:
@@ -48,16 +48,17 @@ variables:
   # what's configured in Project Settings -> Service connections.
   - name: serviceConnectionName
     ${{ if eq(parameters.environment, 'dev') }}:
-      value: rg-pmsvc-dev-SvcCon-WI
+      value: Dev-Evolve-SvcCon
     ${{ if eq(parameters.environment, 'qa') }}:
-      value: rg-pmsvc-qa-SvcCon-WI
+      value: QA-Evolve-SvcCon
     ${{ if eq(parameters.environment, 'prod') }}:
-      value: rg-pmsvc-prod-SvcCon-WI
+      value: rg-pmtsvc-prod-SvcCon-WI
 
-  # Map env -> target resource group name. Region suffix matches the
-  # existing platform convention (centralus).
+  # Map env -> target resource group name. Resource groups don't have a
+  # region suffix in this platform (RGs are global; resources inside them
+  # have their own region per env: DEV/QA = centralus, PROD = eastus).
   - name: resourceGroupName
-    value: rg-pmtsvc-${{ parameters.environment }}-centralus
+    value: rg-pmtsvc-${{ parameters.environment }}
 
   # Map env -> ADO Environment for the deploy stage (carries approvals).
   - name: deploymentEnvironmentName

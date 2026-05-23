@@ -19,8 +19,8 @@ This repo is **infrastructure-only**. Application code lives in the
 | App Configuration | `appcs-pmtsvc-dev-centralus` | `appcs-pmtsvc-qa-centralus` | `appcs-pmtsvc-rtpsend-prod-eastus` |
 | User-assigned MI | `id-pmtsvc-dev-centralus` | `id-pmtsvc-qa-centralus` | `id-pmtsvc-prod-eastus` |
 | App Insights (shared) | `appi-paymentservices-dev-centralus` | `appi-paymentservices-qa-centralus` | `appi-paymentservices-prod-eastus` |
-| Cosmos database | `tptch` | `tptch` | `tptch` |
-| Service connection | `rg-pmsvc-dev-SvcCon-WI` | `rg-pmsvc-qa-SvcCon-WI` | `rg-pmsvc-prod-SvcCon-WI` |
+| Cosmos database | `payments` | `payments` | `payments` |
+| Service connection | `Dev-Evolve-SvcCon` | `QA-Evolve-SvcCon` | `rg-pmtsvc-prod-SvcCon-WI` |
 
 **PROD idiosyncrasies (intentional, do not "fix"):**
 - Cosmos uses prefix `cosmosdb-pmtsvc-` instead of `cosmos-paymentservices-`
@@ -35,7 +35,7 @@ This repo is **infrastructure-only**. Application code lives in the
   user-assigned MI `id-pmtsvc-{env}-{region}`
 - Storage account `stpmtsvcrtpsend{env}` (Functions runtime)
 
-**In the shared `tptch` Cosmos database:**
+**In the shared `payments` Cosmos database:**
 - Container `paymentRequests` (PK `/evolveId`, no TTL)
 - Container `partnerLedger` (PK `/vAccountNumber`, no TTL)
 - Container `apiUserConfig` (PK `/clientId`, no TTL)
@@ -101,7 +101,7 @@ deploy stage (gated by the ADO Environment).
 
 ### 1. Service connections — already exist
 
-`rg-pmsvc-dev-SvcCon-WI`, `rg-pmsvc-qa-SvcCon-WI`, and `rg-pmsvc-prod-SvcCon-WI`
+`Dev-Evolve-SvcCon`, `QA-Evolve-SvcCon`, and `rg-pmtsvc-prod-SvcCon-WI`
 already exist in the project. Each SP needs **Contributor** on the matching
 `rg-pmtsvc-{env}` resource group.
 
