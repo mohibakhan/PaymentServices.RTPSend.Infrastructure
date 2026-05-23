@@ -1,0 +1,15 @@
+# =============================================================================
+# PaymentServices.RTPSend.Infrastructure — top-level pipeline manifest
+#
+# This file exists so the ADO pipeline can be created with the default
+# "Existing Azure Pipelines YAML file" pointing at /azure-pipelines.yml.
+# All real configuration lives in pipelines/infra-pipeline.yml.
+# =============================================================================
+
+# Manual trigger only — no CI or PR builds. Run the pipeline from the ADO UI
+# with the runtime parameters that select environment and action.
+trigger: none
+pr: none
+
+extends:
+  template: pipelines/infra-pipeline.yml
