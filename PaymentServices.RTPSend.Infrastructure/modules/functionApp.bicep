@@ -1,4 +1,4 @@
-// Premium EP1 plan + Function App (Linux .NET 10 isolated worker).
+// Premium EP1 plan (Windows) + Function App (.NET 10 isolated worker).
 //
 // Identity: uses the EXISTING user-assigned managed identity provisioned by
 // the platform team. That MI already has the role assignments it needs on
@@ -59,7 +59,7 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2023-12-01' = {
   }
   kind: 'elastic'
   properties: {
-    reserved: true                       // Linux
+    reserved: false                      // Windows (Linux would be reserved: true)
     maximumElasticWorkerCount: maxInstanceCount
     elasticScaleEnabled: true
     zoneRedundant: false
@@ -77,7 +77,7 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2023-12-01' = {
 resource functionApp 'Microsoft.Web/sites@2023-12-01' = {
   name: functionAppName
   location: location
-  kind: 'functionapp,linux'
+  kind: 'functionapp'                    // Windows (Linux would be 'functionapp,linux')
   identity: {
     type: 'UserAssigned'
     userAssignedIdentities: {
@@ -92,7 +92,7 @@ resource functionApp 'Microsoft.Web/sites@2023-12-01' = {
     // Tell App Service to use this user-assigned MI for Key Vault reference resolution
     keyVaultReferenceIdentity: userAssignedIdentityResourceId
     siteConfig: {
-      linuxFxVersion: 'DOTNET-ISOLATED|10.0'
+      netFrameworkVersion: 'v10.0'       // .NET 10 isolated worker on Windows
       use32BitWorkerProcess: false
       ftpsState: 'Disabled'
       minTlsVersion: '1.2'
