@@ -20,7 +20,7 @@ This repo is **infrastructure-only**. Application code lives in the
 | User-assigned MI | `id-pmtsvc-dev-centralus` | `id-pmtsvc-qa-centralus` | `id-pmtsvc-prod-eastus` |
 | App Insights (shared) | `appi-paymentservices-dev-centralus` | `appi-paymentservices-qa-centralus` | `appi-paymentservices-prod-eastus` |
 | Cosmos database | `tptch` | `tptch` | `tptch` |
-| Service connection | `AzureServiceConnection-DEV` | `AzureServiceConnection-QA` | `AzureServiceConnection-PROD` |
+| Service connection | `rg-pmsvc-dev-SvcCon-WI` | `rg-pmsvc-qa-SvcCon-WI` | `rg-pmsvc-prod-SvcCon-WI` |
 
 **PROD idiosyncrasies (intentional, do not "fix"):**
 - Cosmos uses prefix `cosmosdb-pmtsvc-` instead of `cosmos-paymentservices-`
@@ -101,8 +101,9 @@ deploy stage (gated by the ADO Environment).
 
 ### 1. Service connections — already exist
 
-`AzureServiceConnection-DEV / QA / PROD` already exist in the project. Each
-SP needs **Contributor** on the matching `rg-pmtsvc-{env}` resource group.
+`rg-pmsvc-dev-SvcCon-WI`, `rg-pmsvc-qa-SvcCon-WI`, and `rg-pmsvc-prod-SvcCon-WI`
+already exist in the project. Each SP needs **Contributor** on the matching
+`rg-pmtsvc-{env}` resource group.
 
 Because the platform team already granted RBAC on shared resources to
 `id-pmtsvc-{env}`, the deployment SP does NOT need User Access Administrator
