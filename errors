@@ -1,13 +1,8 @@
-ERROR: {"status":"Failed","error":{"code":"DeploymentFailed","target":"/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Resources/deployments/rtpsend-infra-4485","message":"At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-deployment-operations for usage details.","details":[{"code":"ResourceDeploymentFailure","target":"/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Resources/deployments/cosmosChildren-dev","message":"The resource write operation failed to complete successfully, because it reached terminal provisioning state 'Failed'.","details":[{"code":"DeploymentFailed","target":"/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.Resources/deployments/cosmosChildren-dev","message":"At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-deployment-operations for usage details.","details":[{"code":"ResourceDeploymentFailure","target":"/subscriptions/f585502d-3082-4d9a-8ba9-6b8d0679891c/resourceGroups/rg-pmtsvc-dev/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-paymentservices-dev-centralus/sqlDatabases/payments","message":"The resource write operation failed to complete successfully, because it reached terminal provisioning state 'Failed'.","details":[{"code":"BadRequest","message":"Message: {\"code\":\"BadRequest\",\"message\":\"Reading or replacing offers is not supported for serverless accounts.\\r\\nActivityId: a61eed60-28f9-4a7b-9b57-f92de1d4f06c, Microsoft.Azure.Documents.Common/2.14.0\"}, Request URI: /offers, RequestStats: , SDK: Microsoft.Azure.Documents.Common/2.14.0, Microsoft.Azure.Documents.Common/2.14.0, Microsoft.Azure.Documents.Common/2.14.0, Microsoft.Azure.Documents.Common/2.14.0, Microsoft.Azure.Documents.Common/2.14.0"}]}]}]}]}}
-D:\a\_temp\azureclitaskscript1779559917021_inlinescript.ps1 : Deployment failed (exit code 1).
-At D:\a\_temp\azureclitaskscript1779559917022.ps1:3 char:1
-+ . 'D:\a\_temp\azureclitaskscript1779559917021_inlinescript.ps1'
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-+ CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
-+ FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,azureclitaskscript1779559917021_inlinescript.ps1
-
-##[error]Script failed with exit code: 1
-
-
-Message: {"code":"BadRequest","message":"Reading or replacing offers is not supported for serverless accounts.\r\nActivityId: a61eed60-28f9-4a7b-9b57-f92de1d4f06c, Microsoft.Azure.Documents.Common/2.14.0"}, Request URI: /offers, RequestStats: , SDK: Microsoft.Azure.Documents.Common/2.14.0, Microsoft.Azure.Documents.Common/2.14.0, Microsoft.Azure.Documents.Common/2.14.0, Microsoft.Azure.Documents.Common/2.14.0, Microsoft.Azure.Documents.Common/2.14.0 (Code: BadRequest)
-
+sb-pmtsvc-dev-centralus/payment-processing/rtpsend-process/$Default
+Microsoft.ServiceBus/namespaces/topics/subscriptions/rules
+OK
+Operation details
+sb-pmtsvc-dev-centralus/payment-processing/rtpsend-process
+Service Bus Subscription
+OK
+Operation details
