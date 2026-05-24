@@ -1,0 +1,123 @@
+# =============================================================================
+# PaymentServices.RTPSend infrastructure pipeline
+#
+# Manual-only. Run from ADO UI by clicking "Run pipeline" and selecting:
+#   - environment: dev | qa | prod
+#   - action:      whatIf  -> validate + preview only (safe, read-only)
+#                  deploy  -> validate + preview + deploy (gated on approvals)
+#
+# Stages:
+#   1. Validate  — always runs. Bicep build + az validate. Read-only.
+#   2. WhatIf    — always runs. Shows what would change. Read-only.
+#   3. Deploy    — only runs if action == 'deploy'. Targets ADO Environment
+#                  'rtpsend-infra-{env}', which carries approval policies.
+#
+# Pre-deployment ADO setup (one-time):
+#   - The 3 service connections (Azure Resource Manager / workload identity)
+#     already exist in the project:
+#         Dev-Evolve-SvcCon
+#         QA-Evolve-SvcCon
+#         rg-pmtsvc-prod-SvcCon-WI
+#     The underlying SP must have Contributor on rg-pmtsvc-{env}.
+#
+#   - Create 3 ADO Environments specific to RTPSend infra:
+#         rtpsend-infra-dev, rtpsend-infra-qa, rtpsend-infra-prod
+#     Add approval policies on rtpsend-infra-qa and rtpsend-infra-prod.
+# =============================================================================
+
+parameters:
+  - name: environment
+    displayName: Target environment
+    type: string
+    default: dev
+    values:
+      - dev
+      - qa
+      - prod
+
+  - name: action
+    displayName: Action
+    type: string
+    default: whatIf
+    values:
+      - whatIf
+      - deploy
+
+variables:
+  # Map env -> service connection. The service connection names below match
+  # what's configured in Project Settings -> Service connections.
+  - name: serviceConnectionName
+    ${{ if eq(parameters.environment, 'dev') }}:
+      value: Dev-Evolve-SvcCon
+    ${{ if eq(parameters.environment, 'qa') }}:
+      value: QA-Evolve-SvcCon
+    ${{ if eq(parameters.environment, 'prod') }}:
+      value: rg-pmtsvc-prod-SvcCon-WI
+
+  # Map env -> target resource group name. Resource groups don't have a
+  # region suffix in this platform (RGs are global; resources inside them
+  # have their own region per env: DEV/QA = centralus, PROD = eastus).
+  - name: resourceGroupName
+    value: rg-pmtsvc-${{ parameters.environment }}
+
+  # Map env -> ADO Environment for the deploy stage (carries approvals).
+  - name: deploymentEnvironmentName
+    value: rtpsend-infra-${{ parameters.environment }}
+
+  # Path to the bicep template and parameter file.
+  - name: templateFile
+    value: main.bicep
+  - name: parameterFile
+    value: parameters/${{ parameters.environment }}.bicepparam
+
+stages:
+
+  # ---------------------------------------------------------------------------
+  # Stage 1 — Validate (always runs)
+  # Lints + ARM-validates the template. No effect on Azure resources.
+  # ---------------------------------------------------------------------------
+  - stage: Validate
+    displayName: '1. Validate'
+    jobs:
+      - template: templates/validate-stage.yml
+        parameters:
+          serviceConnectionName: $(serviceConnectionName)
+          resourceGroupName: $(resourceGroupName)
+          templateFile: $(templateFile)
+          parameterFile: $(parameterFile)
+          environment: ${{ parameters.environment }}
+
+  # ---------------------------------------------------------------------------
+  # Stage 2 — WhatIf (always runs)
+  # Shows what would change. No effect on Azure resources.
+  # ---------------------------------------------------------------------------
+  - stage: WhatIf
+    displayName: '2. What-If preview'
+    dependsOn: Validate
+    condition: succeeded()
+    jobs:
+      - template: templates/whatif-stage.yml
+        parameters:
+          serviceConnectionName: $(serviceConnectionName)
+          resourceGroupName: $(resourceGroupName)
+          templateFile: $(templateFile)
+          parameterFile: $(parameterFile)
+          environment: ${{ parameters.environment }}
+
+  # ---------------------------------------------------------------------------
+  # Stage 3 — Deploy (only when action == 'deploy')
+  # Uses an ADO Environment for approval gates.
+  # ---------------------------------------------------------------------------
+  - stage: Deploy
+    displayName: '3. Deploy'
+    dependsOn: WhatIf
+    condition: and(succeeded(), eq('${{ parameters.action }}', 'deploy'))
+    jobs:
+      - template: templates/deploy-stage.yml
+        parameters:
+          serviceConnectionName: $(serviceConnectionName)
+          resourceGroupName: $(resourceGroupName)
+          templateFile: $(templateFile)
+          parameterFile: $(parameterFile)
+          environment: ${{ parameters.environment }}
+          deploymentEnvironmentName: $(deploymentEnvironmentName)

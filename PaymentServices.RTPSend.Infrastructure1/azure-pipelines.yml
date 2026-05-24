@@ -1,0 +1,36 @@
+# =============================================================================
+# PaymentServices.RTPSend.Infrastructure — top-level pipeline manifest
+#
+# This file is what ADO is registered to run. The runtime parameters MUST be
+# declared here (not just in the extended template) so they appear in the
+# "Run pipeline" dialog. The values are then passed through to
+# pipelines/infra-pipeline.yml which holds the actual stage / job definitions.
+# =============================================================================
+
+# Manual trigger only — no CI or PR builds.
+trigger: none
+pr: none
+
+parameters:
+  - name: environment
+    displayName: Target environment
+    type: string
+    default: dev
+    values:
+      - dev
+      - qa
+      - prod
+
+  - name: action
+    displayName: Action
+    type: string
+    default: whatIf
+    values:
+      - whatIf
+      - deploy
+
+extends:
+  template: pipelines/infra-pipeline.yml
+  parameters:
+    environment: ${{ parameters.environment }}
+    action: ${{ parameters.action }}
