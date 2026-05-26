@@ -1,0 +1,1 @@
+The incoming request is not recognized as a namespace policy put request. To know more visit https://aka.ms/sbResourceMgrExceptions. TrackingId:b03cb6e0-a72c-418c-812c-0f2cc3c3cf92_G22, SystemTracker:sb-pmtsvc-qa-centralus.servicebus.windows.net:payment-processing/subscriptions/rtpsend-process, Timestamp:2026-05-26T14:28:34 (Code: MessagingGatewayNotFoundStatusCode)
